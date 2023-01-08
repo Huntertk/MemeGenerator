@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+header{
+
+    background-color: #86E5FF;
+    margin: 0;
+    padding: 0;
+}
+.inner-header{
+    display: flex;
+    width: 400px;
+    align-items: center;
+    margin: 0 auto;
+    gap: 15px;
+    padding: 10px 0 0 0;
+}
+.inner-header img{
+    width: 80px;
+}
+h2,h1,h3{
+    text-align: center;
+}
+h1, h3{
+    margin: 0;
+}
+h2{
+    margin: 25px;
+}
+
+/*Layouts*/
+.controls-container{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin: 0 auto;
+}
+.emotion-radios{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    justify-content: space-between;
+    border-bottom: 1px solid #000
+}
+.gif-check{
+    display: flex;
+    margin: 15px 10px;
+}
+#isGif{
+    margin-left: 20px;
+}
+input[type='radio']{
+    cursor: pointer;
+}
+.memeBtn{
+    cursor: pointer;
+    color: #f5f5f5;
+    background-color: #0081C9;
+    padding: 15px;
+    border-radius: 6px;
+    border:none;
+    margin-top: 10px;
+}
+label{
+    cursor: pointer;
+}
+.memeBtn:active{
+    box-shadow: 4px 4px 8px #000;
+}
+.highlight{
+    font-weight: 600;
+    background-color: #FFD495;
+    color: #FF0032;
+    accent-color: #CD0404;
+}
+
+/*Modal*/
+.memeModal{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    border-radius: 6px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 490px;
+    background-color:#CEEDC7;
+}
+.memeCloseBtn{
+    cursor: pointer;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    color: #ff0000; 
+    font-weight: 700;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+}
+.memeCloseBtn:active{
+    text-shadow: 2px 2px 4px #000;
+}
+.memeImg{
+    width: 300px;
+    border-radius: 6px;
+}
